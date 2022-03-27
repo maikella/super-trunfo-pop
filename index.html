@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Trunfo</title>
+
+    <link rel="stylesheet" href="assets/style.css">
+
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" type="image/x-icon">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+    
+    <main>
+
+        <div class="container">
+           <div class="head">
+               
+               <h1 class="logo">Super Trunfo <span>Pop</span></h1>
+                <button type="button" onclick="sortearCarta()" id="bSortear" ><h3 class="fontSortear" >Sortear Carta</h3></button>
+           </div>
+
+
+            <div class="wrapper">
+
+                <div>
+                    <div id="carta-jogador" class="carta">
+
+                        <img class="img-carta" src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        <h3></h3>
+                        
+                    </div>
+                </div>
+
+
+                <div class="meio">
+
+                    <div id="gameResults"></div>
+
+                    <button type="button" onclick="jogarNovamente()" id="bJogarN"  class="carregar"><h3 class="fontSortear">Jogar Novamente</h3></button>
+
+                    
+                    <button type="button" onclick="jogar()" id="bJogar" ><h3 class="fontSortear">Jogar</h3></button>
+
+                </div>
+               
+
+                <div>
+                    <div id="carta-maquina" class="carta">
+                        <img
+                            src="https://www.alura.com.br/assets/img/imersoes/dev-2021/card-super-trunfo-transparent-ajustado.png"
+                            style=" width: inherit; height: inherit; position: absolute;">
+                        </div>
+                </div>
+                
+                
+            </div>
+
+
+
+        </div>
+    </main>
+
+    <script src="/assets/script.js"></script>
+</body>
+</html>

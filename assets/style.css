@@ -1,0 +1,411 @@
+:root{
+
+    --fontAll:  'Goldman', cursive;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+
+    font-family: var(--fontAll);
+}
+
+body{
+
+    text-align: center;
+    color: white;
+    background-color: rgb(104, 104, 104);
+
+    
+    letter-spacing: 3px;
+
+    background: linear-gradient( rgb(0, 0, 0, .90), rgb(0, 0, 0, .90)100%), url(/assets/img/1.png); 
+    background-size: cover;
+
+    
+    background-color: rgba(0, 0, 0, 0.788);
+    background-blend-mode: color ;
+
+}
+
+.container{
+
+    width:75%;
+    margin: auto;
+    
+}
+
+
+.logo{
+
+    font-size: 3em;
+    margin: auto;
+
+    text-transform: uppercase;
+
+}
+
+
+span{
+
+    color: #03c997;
+}
+
+
+button{
+
+    text-transform: uppercase;
+
+    margin: auto;
+
+    padding: 1em;
+    border-radius: 10px;
+    
+
+    background: linear-gradient(135deg, rgb(197, 173, 79) 0%, hsla(21, 46%, 31%, 1) 100%);
+
+    color:  white;
+
+    text-shadow: 0 0 5px #73442b6b;
+
+}
+
+#bJogar{
+
+    cursor: no-drop;
+
+}
+
+#bJogarN{
+
+    display: none;
+
+    cursor: pointer;
+    
+}
+
+
+ .meio{
+
+    width: 1px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: space-around;
+ }
+
+ 
+
+a{
+    text-decoration: none;
+    color: white;
+}
+
+
+#bSortear{
+
+    cursor: pointer;
+    margin-top: 0.5em;
+
+}
+
+
+.fontSortear{
+
+    font-size: 1.5em;
+
+
+}
+
+
+#bSortear:hover{
+
+    background: linear-gradient(135deg, rgb(197, 173, 79) 0%, rgb(197, 173, 79) 100%);
+    
+
+     transition: .4s ease all;
+
+}
+
+
+#carta-jogador, #carta-maquina {
+
+    width: 360px;
+    height: 500px; 
+
+    
+    overflow: auto;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    margin: auto;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    background-size: 350px 300px;
+    background-repeat: no-repeat;
+    background-position-x: 5px;
+    background-position-y: 10px;
+    border-radius: 33px;
+}
+
+#carta-jogador h3 {
+
+    text-align: center;
+}
+
+.head{
+
+    margin: auto;
+    padding: 0.3em;
+}
+
+.wrapper {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+    margin-top: 2em;
+
+}
+
+.maquina{
+
+    height: 135px;
+
+    margin: 3em;
+    color: white;
+    z-index: 2;
+
+}
+.carta-status {
+
+    height: 150px;
+    margin: 2rem;
+    color: white;
+    z-index: 2;
+}
+
+.atributo{
+
+    font-size: 15px;
+
+    z-index: 2;
+    position: absolute;
+    top: 284px;
+    left: 37px;
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color:  hsla(48, 74%, 63%, 1);
+    text-shadow:  0 0 5px rgba(0, 0, 0, 0.596);
+
+}
+
+.carta-status input {
+    
+    margin: 1em 1em;
+}
+
+
+.carta-status p, .maquina p {
+
+    margin-top: 1em;
+    margin-bottom: 1rem;
+}
+
+
+.carta-subtitle {
+    
+    z-index: 2;
+    position: absolute;
+    top: 30px;
+    left: 37px;
+    font-weight: 800;
+    text-transform: uppercase;
+
+    color: #73442B;  
+}
+
+.resultado-final {
+    
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bolder;
+
+    margin-bottom: 0.5em;
+ 
+}
+
+
+.--spacing {
+    
+    margin-left: 2.5rem;
+}
+
+img{
+    background-size: cover;
+}
+
+
+@media screen and (max-width: 48em){
+
+body{
+
+    background: linear-gradient( rgb(0, 0, 0, .90), rgb(0, 0, 0, .90)100%), url(/assets/img/2.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+
+    background-color: rgba(0, 0, 0, 0.788);
+    background-blend-mode: color;
+}
+
+
+.logo{
+
+    font-size: 2em;
+}
+
+
+.wrapper {
+
+display: flex;
+flex-direction: column;
+align-items: center;
+
+
+
+} 
+
+
+#carta-jogador, #carta-maquina {
+    
+    width: 270px;
+    height: 370px;
+
+    border-radius: 10px;
+    margin-bottom: 20px;
+    
+    background-size: 95%;
+}
+
+
+#bJogar h3{
+
+    font-size: 1em;
+}
+
+
+#bSortear h3{
+
+    font-size: 1em;
+}
+
+
+#bJogarN h3{
+
+    font-size: 1em;
+} 
+
+
+#carta-joagor{
+    margin-bottom: 15px;
+} 
+
+
+#carta-maquina {
+
+    margin-top: 15px;
+}
+
+   
+.maquina{
+
+
+    height: 100px;
+    margin: 2rem;
+
+    color: white;
+    z-index: 2;
+
+}
+
+
+.carta-status {
+
+    font-size: 10px;
+
+    height: 116px;
+    margin: 2em;
+
+    color: white;
+    z-index: 2;
+}
+
+
+.atributo{
+
+    font-size: 11px;
+
+    z-index: 2;
+    position: absolute;
+    
+    top: 211px;
+    left: 24px;
+
+    font-weight: 500;
+    text-transform: uppercase;
+
+    color:  hsla(48, 74%, 63%, 1);
+    text-shadow:  0 0 5px rgba(0, 0, 0, 0.596);
+
+}
+
+
+.carta-status input {
+
+    margin: 0.5em;
+
+}
+
+
+.carta-status p, .maquina p {
+
+    font-size: 10px;
+
+    margin-top: 1em;
+    margin-bottom: 1rem;
+}
+
+
+.carta-subtitle {
+
+    font-size: 18px;
+    
+    z-index: 2;
+    position: absolute;
+
+    top: 20px;
+    left: 30px;
+    
+    font-weight: 800;
+    text-transform: uppercase;
+
+    color: #73442B;  
+}
+
+.resultado-final {
+
+    
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bolder;
+ 
+}
+
+
+}
