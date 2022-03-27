@@ -11,6 +11,5 @@ Nesse projeto, fiz um jogo com artistas pop, por isso, o nome, **Super Trunfo Po
 
 - Realizar operações
 - Utilizar arrays para trabalhar com listas
-- Trabalhar com funções e objetos
 
 ### Link do projeto: <a href='https://super-trunfo-pop.vercel.app/'>clique aqui</a>
